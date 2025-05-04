@@ -24,9 +24,26 @@
     ul {
       margin-top: 5px;
     }
+
+    
+    @media print {
+      button {
+        display: none; 
+      }
+      body {
+        background-color: white;
+        color: black;
+        margin: 0;
+      }
+    }
   </style>
 </head>
 <body>
+
+
+  <button onclick="window.print()" style="position: fixed; top: 20px; right: 20px; padding: 10px;">
+    Print or Save as PDF
+  </button>
 
   <h1>Lucas Vasquez</h1>
   <p style="text-align: center;">
@@ -44,7 +61,6 @@
         will be beneficial in aircraft dispatch because I understand the limitations and minimums of
         flying a plane. With being a shift manager comes the experience of working within a management
         team efficiently, being able to problem solve and manage other people.
-
     </p>
   </section>
 
@@ -83,10 +99,8 @@
       <li>Weight and balance calculations</li>
       <li>NOTAM analysis</li>
       <li>Fuel planning and alternate selection</li>
-
     </ul>
   </section>
 
 </body>
 </html>
-
